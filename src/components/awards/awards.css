@@ -1,0 +1,28 @@
+
+
+.award-item img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+}
+.award-item h5{
+    width: 200px;
+}
+
+@media (min-width:1200px){
+    .awards-items{
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+@media (max-width:1200px){
+    .awards-items{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

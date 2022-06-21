@@ -1,0 +1,27 @@
+.values-container{
+    background: url(https://www.shreecement.com/public/front_assets/images/home-about-description-bg.jpg) repeat;
+    height: auto;
+    width: 100vw;
+     
+}
+.heading-items{
+    display: flex;
+    justify-content: center;
+}
+.items{
+    height: auto;
+    width: 200px;
+    margin: 25px;
+}
+.values-items{
+    margin-top: 40px;
+}
+
+@media(max-width:600px){
+    .heading-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

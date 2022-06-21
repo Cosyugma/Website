@@ -1,0 +1,136 @@
+
+.top-space{
+    margin:40px;
+    
+}
+.aboutus{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutus-details{
+    /* border-right: 2px solid red; */
+    /* padding-right: 10px; */
+    margin: 20px 100px;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+@media (min-width:1200px){
+    .aboutus-details{
+        
+    }
+
+}
+@media (min-width:1000px){
+    .aboutus-details{
+        margin: 20px 200px;
+        
+    }
+
+}
+@media (max-width:500px){
+    .aboutus-details{
+        margin: 20px 0px;
+        
+    }
+
+}
+.topper-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+@media(min-width:600px){
+.topper-item{
+    border-right: 2px solid rgb(157, 17, 17);
+    padding: 40px;
+    margin: 2opx;
+}
+}
+@media(max-width:600px){
+    .topper-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+     
+        
+    }
+
+}
+@media(max-width:600px){
+    .topper-item{
+        border-bottom: 2px solid rgb(157, 17, 17);
+        padding: 40px;
+        margin: 2opx;
+    }
+}
+
+.about-information{
+    display: flex;
+    margin: 0px 50px;
+   
+}
+
+@media(max-width:650px){
+    .about-information{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px;
+       
+    }
+
+}
+.about-div{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+
+  
+}
+
+/* @media(min-width:650px)
+.about-div p{
+    margin-top: 40px;
+ 
+} */
+.about-div p{
+    margin-top: 40px;
+ 
+}
+
+@media(max-width:650px){
+    .about-div{
+        
+        padding: 10px;
+    
+    
+      
+    }
+
+}
+.about-information-container{
+    background-color: antiquewhite;
+}
+
+
+@media(min-width:1200px){
+    .welcome-box{
+    
+        margin: 20px 400px;
+    }
+}
+@media(max-width:1200px){
+    .welcome-box{
+    
+        margin: 20px 100px;
+    }
+}
