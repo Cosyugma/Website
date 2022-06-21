@@ -1,0 +1,38 @@
+.dropdown-para{
+    height: auto;
+    width: 400px !important;
+   
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    /* margin: 30px; */
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.dropdown-menu{
+    
+  
+    margin-top: 200px;
+}
+.navbar-heading h2{
+   color: rgb(182, 37, 37);
+   text-decoration:underline;
+   margin-bottom: 10px;
+}
+
+.Navbar-container{
+    display: flex;
+    justify-content:end;
+}
+.Navbar-item{
+    margin: 10px;
+}
+@media(max-width:720px){
+    .Navbar-container{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
