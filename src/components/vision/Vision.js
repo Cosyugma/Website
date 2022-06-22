@@ -1,6 +1,22 @@
 import React from 'react'
 import './vision.css'
+import $ from 'jquery'
 export default function Vision() {
+
+
+    $(window).scroll(function(){
+        var positionTop = $(document).scrollTop();
+        console.log(positionTop);
+        
+         if((positionTop> 1400 && positionTop<1800)){
+            $('.vision-container').addClass('animated animate__flipInX')
+          
+            
+        }
+       
+      
+      })
+    
     return (
 
         <section style={{

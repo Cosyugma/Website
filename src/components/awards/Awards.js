@@ -1,6 +1,21 @@
 import React from 'react'
 import './awards.css'
+import $ from 'jquery';
 export default function Awards() {
+
+  $(window).scroll(function(){
+    var positionTop = $(document).scrollTop();
+    console.log(positionTop);
+    
+     if((positionTop> 2400 && positionTop<2800)){
+        $('.awards-items').addClass('animated animate__fadeInLeftBig')
+      
+        
+    }
+   
+  
+  })
+  
   return (
     <div className='awards-container'>
         <div className='awards-heading'>

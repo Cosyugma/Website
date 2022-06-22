@@ -7,8 +7,20 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
+.fadeInDown{
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
 
+}
+.fadeInUp{
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
 .aboutus-details{
     /* border-right: 2px solid red; */
     /* padding-right: 10px; */
@@ -19,12 +31,7 @@
     justify-content: center;
     flex-direction: column;
 }
-@media (min-width:1200px){
-    .aboutus-details{
-        
-    }
 
-}
 @media (min-width:1000px){
     .aboutus-details{
         margin: 20px 200px;

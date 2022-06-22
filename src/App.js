@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import $ from 'jquery';
 import SocialMedia from './socialMedia/SocialMedia';
 import ImageAbout from './components/ImageAbout/ImageAbout';
 import AboutUs from './components/aboutUs/AboutUs';
@@ -11,6 +11,7 @@ import Values from './components/values/Values';
 import Awards from './components/awards/Awards';
 import Footer from './components/footer/Footer';
 function App() {
+  
   return (
     <div className="App">
       <SocialMedia/>

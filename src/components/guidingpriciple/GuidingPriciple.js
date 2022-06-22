@@ -1,7 +1,21 @@
 import React from 'react'
 import './guidingpriciple.css'
+import $ from 'jquery'
 export default function GuidingPriciple() {
+  $(window).scroll(function(){
+    var positionTop = $(document).scrollTop();
+    console.log(positionTop);
+    
+     if((positionTop> 1600 && positionTop<1900)){
+        $('.guiding-principle-items').addClass('animate__bounceIn animated')
+        // $('guiding-principle-heading-container').addClass('animate__bounceIn animated')
+        
+     
+    }
+  
+  })
   return (
+     
     <div>
         <div className='guiding-principle-heading-container'>
             <h2>Our Guiding Principles</h2>

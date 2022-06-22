@@ -1,7 +1,26 @@
 import React from 'react'
 import './aboutUs.css'
+import $ from 'jquery';
 
+var x=0;
 export default function AboutUs() {
+    $(window).scroll(function(){
+        var positionTop = $(document).scrollTop();
+        console.log(positionTop);
+        
+         if((positionTop> 300 && positionTop<500) && x==0){
+            $('.aboutus').addClass('fadeInDown')
+            $('.topper-container').addClass('animate__backInLeft animated')
+            
+        }
+        if(positionTop>800 && positionTop<1100){
+            $('.backInLeft').addClass('animate__fadeInLeftBig animated')
+            $('.backInRight').addClass('animate__fadeInRightBig animated')
+
+        }
+      
+      })
+
     return (
         <div className='top-space'>
             <div className='about-container'>
@@ -56,13 +75,13 @@ export default function AboutUs() {
                 <div className='about-information'>
                     
 
-                    <div className='about-div' >
+                    <div className='about-div backInLeft' >
                         <p>Since our founding year in 1979, we have been committed to the cause of sustainable, inclusive growth and this has been possible by building a culture that promotes continuous improvement, innovation, care and collaboration, through which we drive operational excellence in products, processes and people. This has made us a company that cares for its customers and has enabled us to serve markets across India and the Middle East. Shree Cement has a consolidated Cement Production Capacity of 47.4 Million tonnes per annum (including overseas) and a Power Generation Capacity of 752 Megawatts. </p>
                         <p>Our operations span across India and the UAE with 4 integrated plants in India, 1 in UAE and 9 Grinding Units. Shree Cement was also among the industry
 
                         </p>
                     </div>
-                    <div className='about-div'>
+                    <div className='about-div backInRight'>
                         <p>pioneers for the use of alternate fuel resources in the production of cement and today we have the highest installed capacity of Waste Heat Recover Power plants in the world, second only to China. </p>
                         <p>While our past performance has been among the best in the industry we don't believe in resting on laurels since it breeds complacency. Instead, we take pride in a culture that encourages taking opportunities as challenges and pursuing them to build a competitive edge. And that enables us to continue to break new grounds, create new synergies and set new benchmarks.</p>
                     </div>

@@ -202,3 +202,34 @@ ul {
   padding-inline-start: 40px;
 }
 
+.fadeInUpShort{
+  animation-name:fadeInUpshort ;
+}
+.animated{
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+
+@keyframes fadeInDown {
+  0% {
+     
+      opacity: 0;
+     transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+     transform: translateY(0);
+  }
+} 
+@keyframes fadeInUp {
+  0% {
+     
+      opacity: 0;
+     transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+     transform: translateY(200px);
+  }
+} 
